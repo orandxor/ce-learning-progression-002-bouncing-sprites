@@ -63,10 +63,10 @@ Table of Contents
 This progression continues to introduce new programming language components, revisit those already introduced in more depth, and build up your skills to create more dynamic and compelling programs. You will get used to reading the official documentation for the JavaScript and TypeScript languages frequently as you continue learning to program.  
 
 ### Step 1: Controlling the number of iterations with `for`
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 We saw that the `while` loop is very useful for repeating behavior multiple times without having to duplicate code. But what if we wanted to repeat a behavior _exactly_ some number of times? We'll need to use a _variable_. Here's how we would go about doing this:
 ```javascript
@@ -139,7 +139,7 @@ for ([initialization]; [condition]; [final-expression])
 The _square brackets_ `[]` indicate an _optional_ element. All three _expressions_ (more on expressions [below]((#step-6-expressions)) - the _initialization_, the _condition_, and the _final expression_ - are optional. There are various cases in which you don't want all three expressions to be included. For example, the `for (;;)` loop form is exactly equivalent to a `while (true)` loop. Note that the _expression-delimiting semi-colons_ `;` are **not optional**.
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Write a program that shows a heart icon for odd numbers and pauses for 100 ms for even numbers in a `for` loop from 0 to 10 (not inclusive). _Hint: You will need to use the loop variable of the `for` loop to check for odd and even numbers and have an `if...else` conditional statement in the block of the loop._  
 2. Write a program shown executing on the micro:bit in the this [video](https://msudenver.yuja.com/Dashboard/Permalink?authCode=754064295&b=1599792&linkType=video). It may look quite differnt from the examples, but it's very similar. Some hints:
@@ -151,7 +151,7 @@ The _square brackets_ `[]` indicate an _optional_ element. All three _expression
 
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 1. Add your program from 1.2.1 with filename `microbit-program-1-2-1.js`.  
@@ -171,10 +171,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 2: Breaking out of loops with `break`
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 Being so useful in running the same code muliple times, the `while` and `for` loops are ubiquitous in computer programs. This is why computer languages have keywords for them. Just as often as one needs a loop, one is likely to need a way to break out it. There's a keyword for that, too, namely `break`:
 ```javascript
@@ -253,7 +253,7 @@ basic.forever(function () {
 Notice how, when you toggle button A, the LED lighting pattern goes all the way or stops halfway. The latter case is due to the `break` statement, which cause the inner loop to exit before running through all the values of the loop variable `y`.
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Write a program like Example 2.2 above, which instead fills the pattern one _row_ at a time.  
 2. Write a program like Example 2.3 above, which instead fills in the other remaining "half" when `halfWay` is toggled true.  
@@ -262,7 +262,7 @@ Notice how, when you toggle button A, the LED lighting pattern goes all the way 
 
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -282,10 +282,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 3: Arrays are the best use for loops
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 Data types divide into two main groups: _primitive_ data types have _word-storage_, which means that in memory they take up a _word of memory_, usually 16 or 32 bits, while _composite_ data types have _structure-storage_, which means that they are composed of some combination of primitive-type variables. Here are examples of primitive-type variables.  
 ```javascript
@@ -398,7 +398,7 @@ favoriteIcons.forEach(function (value: IconNames, index: number) {
 You might recognize the function-as-an-argument paradigm that is so fundamental to JavaScript. Again, it is an anonymous function, called a _callback_ function, but notice that this time it has parameters `value` and `index`. For each element of the array, this function is called, the value of the element and its index are passed in as arguments to the callback. In our case, we only need the value, which will be an icon.  
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Extend Example 3.1.6 to show 5 different icons and, using the loop variable `i`, show each subsequent one for a shorter period of time.  
 2. Show the icons from the previous program in reverse order in two different way:
@@ -407,7 +407,7 @@ You might recognize the function-as-an-argument paradigm that is so fundamental 
 3. Take Example 2.1.3 and create two number arrays, `xArr` and `yArr`, where the columna and row indices are _scrambled_ (that is, not in order). Then, instead of plotting `x` and `y`, use the loop variables as indices into the two arrays.
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -429,10 +429,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 4: Beyond `if...else`
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 Branching upon conditions is one of the most powerful features of programming languages. The basic `if...else` statement that we encountered earlier allows a _two-way branch_ in the execution of a program's code. Here we will introduce some further abilities of the statement. The first one, which we already saw in a previous step, is the _conditional one-way branch_:
 ```javascript
@@ -576,7 +576,7 @@ Notice in the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaS
 In general, `switch` statements are best for numerical equalities and `if...else` cascades are best for _intervals_ and _inequalities_, as we saw in Example 4.1.2.  
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. The `enum` type `IconNames` contains 40 icon names. These names actually resolve to numbers. You can easily see that with these lines:
    ```javascript
@@ -595,7 +595,7 @@ In general, `switch` statements are best for numerical equalities and `if...else
    4. The `case` statements are checked one at a time, from top to bottom, but they can be written in any order. Think of how you can arrange them cleverly to help with the solution.  
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -617,10 +617,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 5: Operators
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 We have seen manu _operators_ so far. In programming languages and mathematics, operators are symbols which stand for specific _actions_ the computer to make. These can be mathematical functions (like the arithmetic functions) but don't have to be. For example, the dot, or _dereferencing_ or _member access_, operator `.` serves to select, for example, a specific sub-entity (that is, member) in a package, variable, or type. Operators are usually a single character, but they don't have to be. For example, the increment operator `++` and the corresponding decrement operator `--` are two-character strings. We'll call out several familiar operators to strengthen the awareness about their usage:
 
@@ -715,7 +715,7 @@ for (let i=0; i<arr.length; i++) {
 ```
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Write a program that scrolls a string along the LED matrix of the micro:bit, in a `for` loop. Each time through the loop, the loop variable `i` should be concatenated to the string before its shown. Note that `+` will not work on a string and a number, like `"hello" + 6`, so `i` needs to be converted to a string `"i"` by calling its `toString()` method. Remember how we added to a variable, like `i = i + 3`; you have to do something similar with your string variable.  
 2. Write a progam that adds elements to an array, in a `for` loop. Start with the array `[1, 1, 1, 1, 2, 2, 2, 2]`. Each time through the loop, using the array function `insertAt()`, add the loop variable to the array in such a way that the result will be `[1, 1, 1, 1, 0, 1, 2, 3, 4, 5, 2, 2, 2, 2]`. Then, in another `for` loop, print the array in the following way: `"12"`, `"12"`, ..., `"05"`, `"14"`, ... . In other words, the first time through the loop, you should take the first and last elements, convert them to strings, concatenate them, and print them with `showString()`, continuing inward from both ends as the loop continues. Hints and notes:
@@ -731,7 +731,7 @@ for (let i=0; i<arr.length; i++) {
       ```
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -747,10 +747,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 6: Expressions
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 We have mentioned "expressions" many times already, but have not defined what they are. [Wikipedia](https://en.wikipedia.org/wiki/Expression_(computer_science)) provides a very compact and precise definition: _In computer science, an expression is a syntactic entity in a programming language that may be evaluated to determine its value._ So, in plain words, expressions are piece of program code which can be _evaluated_, using the syntactic rules of the language and the values of the variables and constants that appear in the expressions. Going back to our initial definition of computers, expressions are in the heart of the data manipulation that computers do.
 
@@ -771,7 +771,7 @@ Another term that appears often when expressions are discussed is _statement_. T
 
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Write a program which:
    1. Picks and lights two random points on the micro:bit LED matrix.  
@@ -785,7 +785,7 @@ Another term that appears often when expressions are discussed is _statement_. T
    4. One pressing the A button, new two points are picked and the procedure is repeated.  
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -801,10 +801,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 7: Composite conditions
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 We have seen everything that we need to use _composite conditions_ in conditional statements, to get exactly the complex behavior we want from our programs. Let's recap:
 1. Even though only `if...else` can properly be called a _conditional statement_, the `while` and `for` loop statements also include _conditions_.   
@@ -813,7 +813,7 @@ We have seen everything that we need to use _composite conditions_ in conditiona
 
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 The following exercises can be written in more than one way, but you are encouraged to try your hand at solutions involving composite conditions.
 
@@ -822,7 +822,7 @@ The following exercises can be written in more than one way, but you are encoura
 3. Using `led.plot()`, blink a 3x3 square clockwise and counterclockwise in the corners of the 5x5 LED matrix. At the press of a button A, toggle between "solid" and "hollow" square. At the press of button B, toggle the clockwise-counterclockwise direction.   
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -841,10 +841,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 8: Functions and variable scope
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 Blocks, that is, lines of code enclosed in curly braces `{}`, not only encapsulate code, but also define _scope_ for variables and functions. The scope of a variable of function is the region of code where it is defined and accessible. Variables and functions defined in a block are defined and visible to all the code inside the block, including any _nested_ blocks, but **not** outside the block where they are defined. This is called _block scoping_ and is an important feature of programming languages that allows well-organized and modular programs. Let's revisit the various block scopes that we have encountered so far:
 ```javascript
@@ -956,7 +956,7 @@ arr.forEach(function (value: number, index: number) {
 We will briefly mention here that functions **can** be declared _inside_ other functions. In this case, they cannot be called outside of the declaring scope unless they are returned out of the function and assigned to a function-valued variable outside it. As a reminder, in JavaScript (and TypeScript, being a superset of JS), functions are _first-class citizens_, so anything that can be done with variables in the language is also permitted to be done with functions. This said, it is unlikely that we'll need to use these advanced function features.  
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. If you needed to print out (aka show) a bunch of strings, one after the other, with commas between all of them, but without a trailing comma (that is, like `I, cannot, believe, my, eyes`), how would you do it? You have the array `["I", "cannot", "believe", "my", "eyes"]`. Use a `for` loop to print the show the strings. _Hint: There are two ways to do it:_
    1. _One with a check (that is, condition) on the loop variable which is used as the array index. This one is expensive, as the check has to be performed for each value of the loop variable, and for a large array that is considerable overhead._  
@@ -972,7 +972,7 @@ We will briefly mention here that functions **can** be declared _inside_ other f
    4. Using these functions, arrive at the array `[5, 9, 16, 19, 30]` and print the numbers one after the other.  
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -994,10 +994,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 9: Encapsulating data and functions into classes
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 When a program becomes big, and multiple functions modify the values of multiple variables, programming becomes hard and _debugging_ (meaning locating and removing logical errors from the program) becomes even harder. This was actually such a big problem in early computing that it brought about the introduction of one of the most powerful programming paradigms, _object-oriented programming_. Objects are _user-defined composite types_, which encapsulate data along with the _methods_ (that is, functions) that can be executed against them. Objects are defined by _classes_, which are essentially _object templates_ or _object blueprints_. In other words, objects are _instances_ of [classes](https://makecode.microbit.org/javascript/classes). With this powerful programming language construct, we don't need to pass data around to various functions, trying to keep the data updated at all times. The object-oriented paradigm turns this around: now we create objects which encapsulate this data and call their methods to manipulate the data; all the bookkeeping is taken care of for us.
 
@@ -1051,7 +1051,7 @@ We also see that the selector operator `.` works just like for built-in composit
 
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Create a class `BrightPoint`, like `Point` in the example, which also has a numerical `brightness` variable. The brightness of LEDs take values from 0 to 255. Create a few `BrightPoint`s at different locations and with different brightness, and use `led.plotBrightness()` to light them up on the micro:bit LED matrix. _Hint: Remember to add the brightness parameter to the constructor._    
 2. Create a class `RandomSquare` with random side (1, 2, or 3) that can be plotted on the LED matrix. Write a small program to have squares appear on the LED matrix and fade. _Hint: Fading is a gradual decrease in brightness until it reaches 0._   
@@ -1069,7 +1069,7 @@ We also see that the selector operator `.` works just like for built-in composit
       ```
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -1088,10 +1088,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 10: The separate lives of objects
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 The power of the object-oriented paradigm comes from the fact that objects are independent entities, with their own lifecycle: they get created, they compute and behave, and they are deleted when no longer useful. Moreover, the human mind has evolved to think in object-oriented terms. The notion of an object, an entity that holds together its components, and more often then has persistent shape, is deeply rooted in human thinking.   
 
@@ -1101,14 +1101,14 @@ One last thing we need to point out about classes is that, just like we saw with
 
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Using the functions of the `game` package, write a program to create several sprites that do different things around the LED matrix: randomly appear and disappear, move around and bounce off the walls, etc. Feel free to use the MakeCode guides, tutorials, and projects that pertain to `game.LedSprite`. Explore especially the `create`, `move`, `turn`, `change`, and `delete` methods, as well as the `LedSpriteProperty` `enum` type. The class is written for you, so the criterion is to go the extra mile to create something eye-catching and fun.  
 2. Go back to your `BrightSprite` and add a `move` method which randomly chooses to change to a neighboring position, _wrapping around the edges_ correctly. Spawn a few `BrightSprite`s at different locations and with different brightnesses, and have them move about.    
 3. Make your `BrightSprite` blink at one of 3 different rates. Create a few sprites and have the move about, blinking each at its rate.    
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -1127,10 +1127,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 11: Inheritance with classes
-[[toc](#table-of-contents)]
+[[top]#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 What if we generally like the capabilities of `game.LedSprite` objects, but we are not quite satisfied? What if we want to tweak them a little bit but don't actually want to go out of our way to rewrite the whole class? One of the foremost features of object-oriented programming is the ability to fine tune classes by extending and/or specifying the object behavior they define. Because we are actually creating a new class on top of an existing one, without changing the existing one, this programming language feature is called _inheritance_. The class we are building on top of is called the _superclass_ or _base class_, and our derived class, which _inherits_ and possibly extends and/or specifies the behavior of the base class, is called a _subclass_. 
 
@@ -1205,7 +1205,7 @@ Notice the keyword `super` which is used to call the superclass constructor, in 
 
 
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Using the original `game.LedSprite` methods, write a program to:
    1. Have the sprite move around, bouncing off the walls. _Hints:_ 
@@ -1220,7 +1220,7 @@ Notice the keyword `super` which is used to call the superclass constructor, in 
    3. Once the derived class is declared, and a `HaloSprite` is created instead of the `game.LedSprite`, the rest of the program remains exactly the same. This is the coolest thing about inheritance.  
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [programs](programs) directory:
 
@@ -1239,10 +1239,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 12: Execution with branches
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 #### 1. Study
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 How do the lines of program code that we write actually get executed. They don't! Until they are transformed into long sequences of processor instructions. This process is called _compilation_ and, as it is quite involved, we won't delve more deeply into it until a later progression. Suffice it to say that programs are converted to simple machine [instructions](https://developer.arm.com/documentation/ddi0432/c/programmers-model/instruction-set-summary), in which form they are called _assembly_, and these instructions are what the processor actually executes.
 
@@ -1253,7 +1253,7 @@ How do the language constructs we encountered - loops, conditional statements, f
 As you can see, whenever we have a conditional, a loop, or a function call, there is a lot of branching going on. When a branch occurs, that is, when the processor cannot execute the next instruction in memory but has to "jump" to a different (and maybe distant) part of the program and pick up there, a lot of the current data in the processor has to be saved and/or discarded, and the new data loaded.
   
 #### 2. Apply
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 1. Explain what branching is and whether it is or isn't computationally expensive. Motivate your answer.    
 2. **[Optional challenge, max 10 extra step points]** We have shown how all of our familar programming language constructs actually execute on the processor, except one, namely handling external events like `input.onButtonPressed()`. Using sketches, code snippets, documentation references, and original narrative, show how the processor handles external events. Consider using the following resources:  
@@ -1261,7 +1261,7 @@ As you can see, whenever we have a conditional, a loop, or a function call, ther
    2. [Exploring the BBC micro:bit Software Stack](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/).    
 
 #### 3. Present
-[[toc](#table-of-contents)]
+[[top](#table-of-contents)]
 
 In the [Lab Notebook](README.md):
 
